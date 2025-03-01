@@ -30,13 +30,11 @@
     margin-bottom: 20px;
     max-width: 800px;
     text-align: left;
-    margin: 20px;
   }
   
   /* Top Section: Two Images Side by Side */
   .top-section {
     display: flex;
-    justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
   }
@@ -46,7 +44,6 @@
     height: 291px;
     background: url('https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/hipster-style-bearded-man_158595.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
     background-size: cover; /* Ensure the image covers the container */
     background-position: 50% 14.94%;
   }
@@ -55,7 +52,6 @@
     height: 291px;
     background: url('https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/man-cuts-his-beard-barbershop_111.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
     background-size: cover;
   }
   
@@ -70,33 +66,27 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 45%;
   }
-  .l {
+  .box {
     min-height: 331px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9));
     background-size: cover;
     width: 300px;
-    position: relative;
-    left: 100px;
-   
+    display: flex;
+
   }
   .bottom-images img {
-    object-fit: cover; /* Ensures the image covers the container */
     display: block;
     width: 100%; /* Make the image take full width of its container */
     height: 400px; /* Set a fixed height */
     border-radius: 8px; /* Optional: Add rounded corners */
-    position: relative; /* Required for positioning text inside the image */
     width: 262px;
     height: 216px;
-    margin: -2px auto;
     object-fit: contain;
     background-size: contain;
-    position: relative;
-    top: 51px;
+    
   }
   
  
@@ -152,7 +142,7 @@
     h2 {
               margin: 15px 0;
               width: 100%;
-              max-width: 300px;
+              max-width: 400px;
     }
   
     .image-section img {
@@ -166,7 +156,7 @@
     .text-section p {
       font-size: 16px; /* Slightly smaller font size */
     }
-    .bottom-section .l {
+    .bottom-section .box {
         position: relative;
         left: 5px;
     }
@@ -222,7 +212,7 @@
       margin: 0;
     }
   
-    .l {
+    .box{
       width: 100%;
       height: 400px;
       left: 0;
